@@ -1,0 +1,419 @@
+* {padding: 0; margin: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    height: 100vh;
+   
+}
+
+
+header  {
+position: relative;
+width: 100%;
+min-width: 100%;
+padding: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #010007;
+color: white;
+}
+
+/*Estilos de menú*/
+
+.opciones-menu {right: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-right: 35%;
+    position: absolute;}
+
+li {list-style: none; 
+    cursor: pointer; 
+    padding: 30px; 
+    transition: all 0.3s ease 0s;
+    
+}
+
+a {text-decoration: none; 
+    color: white;
+}
+
+li:hover {
+        background-color: goldenrod;
+        transform: translateY(10px);
+}
+
+.ul-second{ position: absolute;
+    display: none;
+    transform: translateY(20px);
+   
+    width: 100%;
+}
+
+.ul-second > div li  {border-bottom: solid 1px white;
+text-align: center;
+padding: 20px;
+width: 190px;
+transform: translateX(-20px);
+background-color: #010007;
+}   
+
+.ul-second > div {display: flex;
+    flex-direction: column;}
+
+.ul-second> div li:hover {background-color: goldenrod; }
+
+.ul-first:hover > .ul-second{display: flex;}
+
+/*logo y botones superiores*/
+.logo > img {width:180px; 
+    padding-bottom: 0px;
+    
+}
+.logo:hover > img {transform: none;}
+
+h1 { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; 
+text-align: center;
+}
+
+button {background-color: goldenrod; padding: 15px; border-radius: 12px; font-size: medium;
+    width: 200px;
+}
+
+.boton-lectura {
+    width: 150px;
+    height: 100px;
+    align-items: center;
+}
+.boton-lectura  > .audifonos {
+    width: 100px;
+   height: 70px;
+}
+
+
+.informacion {
+    padding: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 0px;
+ background-color: #1a2335;
+}
+
+/*Sección de libros top*/
+.destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
+    margin-top: 20px;
+    height: 10%;
+    width: 100%;
+
+}
+.destacados .libro {
+    width: 18%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow:0 0 20px violet;
+    overflow: hidden;
+}
+.libro img {
+    width: 100%
+   
+}
+
+
+img:hover{
+    transform: scale(1.1);
+    
+}
+
+.libro .detalles {
+    padding: 3px;
+}
+.libro.detalles, h2 {
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.libro .detalles.genero {
+    
+    text-align: left;
+    color: #666;
+}
+
+footer{
+    background-color: goldenrod;
+    height: 120px;
+    padding-left: 0;
+    display: flex;
+    text-align: center;
+   
+}
+
+#footer2 {
+    background-color: goldenrod;
+    height: 120px;
+    padding-left: 0;
+    display: flex;
+    text-align: center;
+}
+.infofoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.infofoot a {
+    margin: 5px 0; /* Espacio entre cada línea de texto */
+    padding-left: 20px;
+}
+/*Estilos de colección por tematica*/
+
+.coleccion img {
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 200px;
+    width: 370px;
+    border-radius: 13%;
+}
+
+.coleccion{padding-top: 30px; 
+    padding-bottom: 30px; 
+    background-color: #1a2335;}
+.caja { 
+     display: inline-block; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+}
+    
+/*Estilos nosotros.html */
+.informacion {background-color: rgb(190, 145, 93); padding: 60px; 
+color: white;
+}
+
+.contenidoInformativo{text-align: center; padding-top: 50px;}
+.descripcion {background-color: rgb(190, 145, 93); padding: 20px; color: rgba(245, 245, 245, 0.774); padding-left: 50px; padding-right: 50px};
+
+/* Estilos de generos.html*/
+
+.seccion2 {
+  color: white;
+}
+
+.titulo-genero {color: goldenrod;}
+.libro2 {
+    padding: 40px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows:  1fr; 
+   gap: 50px 100px; 
+   grid-template-areas: 
+     ". . ."
+     ". . ."; 
+ }
+   
+  
+.libro2, .parrafo {
+   
+    color: white;
+}
+
+.portada {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
+    
+}
+.portada img {
+    height: 350px;
+}
+
+ .titulo-genero {
+    font-size: 50px;
+    color: #1a2335;
+    background-color: goldenrod;
+}
+.container{
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 5px solid #010007;
+    border-radius: 1em;
+    background-color: goldenrod;
+    height: 500px;
+  }
+  
+ legend {
+    padding-bottom: 40px;
+    color: #1a2335;
+     font-size: 50px; 
+    text-align: center;
+ }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    color:white;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .button {
+    margin-top: 1em;
+  }
+  
+
+  .section-generos {
+    display: flex;
+    
+  }
+
+ .audilibro {
+    width: 100%;
+ }
+
+ .capitulo {
+    display: flexbox;
+    scroll-behavior: smooth;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+ }
+ 
+ .parrafo {
+    padding: 40px;
+   
+ }
+ .chapter {
+    color: goldenrod;
+ }
+ .scroll {
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 50px;
+    background-color: white;
+   
+  }
+/*OPCIONES DE BOTONES EN AUDIOLIBROS*/
+  .opcionesTexto {
+    display: grid; 
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; 
+    grid-template-rows: 0.5fr; 
+    gap: 10px 100px;
+  grid-template-areas: 
+    "b b b b"; 
+    
+  }
+#notas {
+    border-color: goldenrod;
+    height: 200px;
+     width: 500px;
+     border-width: 10px;
+     border-radius: 12px;
+}
+
+.contenedor {
+    
+   display: grid;
+    background-color: white;
+    border-color: goldenrod;
+    height: 200px;
+     width: 500px;
+     border-width: 10px;
+     border-radius: 12px;
+   
+}
+
+.bloc {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "at div"; 
+      padding-left: 50px;
+      
+}
+ .highlight { background-color: yellow;  }
+
+.asterisco {
+ visibility: visible;
+    color:red;
+}
+
+.wallpaper > img {
+    width: 80%;
+    height: 400px;
+    transform: none;
+ 
+}
+
+.section-generos {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 1fr; 
+    gap: 80px 10px; 
+    grid-template-areas: 
+      "."
+      "."; 
+      text-align: center;
+   
+  }  
+  
+
+ /*Media querys para mobile*/
+@media screen and (min-width: 320px) {
+
+    .opciones-menu {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .coleccion {
+        float: left;
+    width:100%;
+    background-color: #1a2335;
+    }
+    
+    .seccion2 {
+        float: left;
+    width:100%;
+    }
+    
+}
+@media (max-width: 900px) {
+
+        .logo {
+            display: block;
+            width: 100%
+            grid-template-columns 1fr;
+        }
+ 
+
+}
+
+
+
+
+

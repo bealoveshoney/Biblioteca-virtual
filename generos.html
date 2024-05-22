@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca UI</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="javascript.js"></script>
+    <header>
+     
+        <div class="logo"><img src="imagenes/Universo.gif" alt="Universo"></div>
+        
+       
+            <ul class="opciones-menu">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li class="ul-first"><a href="generos.html">Géneros</a>
+                    <ul class="ul-second">
+                        <div>
+                            <li><a href="generos.html#ficción">Ficción</a></li>
+                            <li><a href="generos.html#romantica">Novela romántica</a></li>
+                            <li><a href="generos.html#suspense">Misterio y suspense</a></li>
+                        </div>
+                        <div>
+                            <li><a href="generos.html#fantasy">Fantasía</a></li>
+                            <li><a href="generos.html#infantil">Literatura infantil</a></li>
+                            <li><a href="generos.html#class">Literatura clásica</a></li>
+                           
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="audiolibros.html">Audiolibros</a></li>
+                <li><a href="colecciones.html">Colecciones</a></li>
+                <li><a href="nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+                </ul>
+           
+         
+         <div class="botones">
+            <a href="formulario.html"></a><button>Registrarse</button>
+        <button>Iniciar sesión</button>
+
+         </div>
+   
+    </header>
+
+    <section class="seccion2">
+        <h2 class="titulo-genero" id="ficción">Ficción</h2>
+
+        <div class="libro2">
+
+            <div class="portada"> 
+                <img src="imagenes/fahrenheit.jpg" alt="fahrenheit">
+                
+          <div>
+            <br>
+            <p class="parrafo" id="fahrenheit">Fahrenheit 451 ofrece la historia de un sombrío y horroroso futuro. Montag, el protagonista, pertenece a una extraña brigada de bomberos cuya misión,
+                 paradójicamente, no es la de sofocar incendios sino la de provocarlos, para quemar libros. Porque en el país de Montag está terminantemente prohibido leer.</p>
+                <button class="boton-lectura" onclick="lecturaAudio0()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+                
+            </div>
+           
+            <div class="portada">
+                <img src="imagenes/fin de la eternidad.jpg" alt="fin de la eternidad">
+                <div>
+                    <br>
+                    <p class="parrafo" id="fin">Una novela que explora la manipulación del tiempo y sus consecuencias, donde la Eternidad, una organización que controla los viajes en el tiempo, se enfrenta a dilemas éticos.
+                    </p>
+                </div>
+                <button  class="boton-lectura" onclick="lecturaAudio1()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+            
+           <div class="portada">
+            <img src="imagenes/el libro de las almas.jpg" alt="libro de las almas">
+            <div>
+                <br>
+                <p class="parrafo" id="almas">¿Qué harías si supieras la fecha del fin del mundo?
+                    Un hombre a las puertas de la muerte  encarga a Will Piper la búsqueda de un antiguo y enigmático libro. Se  trata de uno de los volúmenes de la llamada Biblioteca de los muertos,  el único que nunca fue hallado y que oculta un secreto aterrador. Un  secreto que nadie se atreve a revelar pero tampoco a destruir.
+                </p>
+                <button  class="boton-lectura" onclick="lecturaAudio2()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+           </div>
+            
+       <div class="portada">
+        <img src="imagenes/hyperion.jpg" alt="hyperion">
+        <div>
+            <p class="parrafo" id="hyperion">
+                "Hyperion" es una novela de ciencia ficción que sigue a siete peregrinos en un viaje al misterioso planeta Hyperion, donde enfrentan al enigmático Shrike. Cada peregrino tiene un motivo personal para enfrentarse a esta entidad, y a medida que comparten sus historias, se revelan conexiones sorprendentes. La novela explora temas de poder, humanidad y destino en un universo futurista lleno de intriga y peligro.</p>
+                <button  class="boton-lectura" onclick="lecturaAudio3()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+        </div>
+       </div>
+       
+        <div class="portada">
+            <img src="imagenes/neuromante.jpg" alt="neuromante">
+            <div>
+                <br>
+                <p class="parrafo" id="neuromante">
+                    "Neuromante" es una novela de ciencia ficción que sigue a Case, un hábil hacker cibernético, quien es reclutado por una misteriosa mujer llamada Molly para llevar a cabo un trabajo peligroso en un mundo dominado por corporaciones poderosas. Ambientada en un futuro distópico donde la tecnología y la realidad virtual se entrelazan, la historia de Case lo lleva a enfrentarse a enemigos poderosos y a descubrir secretos que desafían su comprensión del mundo.
+                </p>
+                <button  class="boton-lectura" onclick="lecturaAudioNeu()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+        </div>
+        
+        <div class="portada">
+            <img src="imagenes/snow crash.jpg" alt="Snow crash">
+            <div>
+                <p class="parrafo" id="snow">
+                    Una mezcla de ciencia ficción y sátira social que presenta un mundo distópico donde las corporaciones gobiernan y los hackers son celebridades, todo mientras una peligrosa droga virtual amenaza con colapsar la realidad.
+                </p>
+                <button  class="boton-lectura" onclick="lecturaAudioSnow()" >leer <img  class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+        </div>
+        </div>
+
+        <h2 class="titulo-genero" id="romantica">Novela romántica</h2>
+        <div class="libro2">
+
+            <div class="portada">
+                <img src="imagenes/orgullo y prejuicio.jpg" alt="Orgullo y prejuicio">
+                <div>
+                    <br>
+                    <p class="parrafo" id="orgullo">
+                        La señora Bennet ha criado a sus cinco hijas con el único deseo de encontrar marido. La llegada al vecindario de Charles Bingley, un joven rico y soltero, con algunas amistades despierta el interés de las hermanas Bennet y de las familias vecinas, que verán una excelente oportunidad para cumplir su propósito. Elizabeth, una de las hijas de los Bennet, empezará una singular relación con Darcy, uno de los amigos de Bingley, que desencadenará esta historia de orgullo y prejuicios entre los dos hasta llegar a conocer el verdadero amor. 
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio5()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+     
+               <div class="portada">
+                <img src="imagenes/outlander.jpg" alt="outlander">
+                <div>
+                    <br>
+                    <p class="parrafo" id="outlander">
+                        La historia sigue a Claire Randall, una enfermera británica que en 1945 viaja en el tiempo involuntariamente desde la Escocia de la posguerra hasta 1743, durante el conflicto jacobita. En este nuevo período, Claire se ve envuelta en intrigas políticas y en un apasionado romance con Jamie Fraser, un valiente guerrero escocés. Mientras lucha por encontrar una forma de volver a su propio tiempo, Claire se enfrenta a decisiones difíciles y a peligros que amenazan su vida y su corazón. La narrativa combina elementos de romance histórico, aventura y viajes en el tiempo, creando una historia absorbente y emocionante.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio6()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada" >
+                <img src="imagenes/agua para chocolate.jpg" alt="agua para chocolate">
+                <div>
+                    <p class="parrafo" id="chocolate">
+                        Una novela mágica que cuenta la historia de Tita, una joven mexicana atrapada por las tradiciones familiares, y su relación con Pedro, el hombre al que ama, a través de las recetas y las emociones que prepara en la cocina.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio7()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/notebook.jpg" alt="The Notebook">
+                <div>
+                    <br>
+                    <p class="parrafo" id="notebook">
+                        La historia sigue el amor entre Noah Calhoun y Allie Nelson, dos jóvenes que se enamoran perdidamente durante el verano de 1940 en Carolina del Norte. Sin embargo, debido a diferencias sociales y circunstancias imprevistas, se ven obligados a separarse. Años más tarde, cuando Allie está comprometida con otro hombre, el destino los reúne nuevamente. A través de flashbacks y momentos emotivos, la novela explora la fuerza del primer amor, el poder del perdón y la importancia de los recuerdos en la vida de las personas.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio8()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+        
+            <div class="portada">
+                <img src="imagenes/meant to be.jpg" alt="Meant to be">
+                <div>
+                    <p class="parrafo" id="meant">"Meant to Be" ("Destinados") es una novela juvenil contemporánea escrita por Lauren Morrill. La historia sigue a Julia, una estudiante aplicada que prefiere seguir las reglas y planificar todo en su vida. Durante un viaje escolar a Londres, Julia se encuentra emparejada con Jason, un chico despreocupado que representa todo lo opuesto a ella. A medida que enfrentan una serie de aventuras y contratiempos en la ciudad, Julia se ve obligada a cuestionar sus creencias sobre el destino y el amor verdadero.</p>
+                </div>
+                <button  class="boton-lectura" onclick="lecturaAudio9()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/attachments.jpg" alt="attachments">
+                <div>
+                    <br>
+                    <p class="parrafo" id="att">
+                        La historia sigue a Lincoln, un joven que trabaja en el departamento de seguridad informática de un periódico. Su trabajo consiste en monitorear los correos electrónicos de los empleados, y mientras lo hace, se encuentra leyendo las divertidas y confidenciales conversaciones entre Beth y Jennifer, dos amigas que trabajan en el mismo lugar. A medida que Lincoln se sumerge en sus vidas a través de los correos electrónicos, comienza a desarrollar sentimientos por Beth, aunque nunca la ha conocido en persona. La novela explora temas de amor, amistad y la conexión en la era de la tecnología, con una mezcla encantadora de humor y romance.
+                    </p>
+                </div>
+                <button  class="boton-lectura" onclick="lecturaAudio10()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+        </div>
+        <h2 class="titulo-genero" id="fantasy">Fantasía</h2>
+        <div class="libro2">
+
+            <div class="portada">
+                <img src="imagenes/juego de tronos.webp" alt="juego de tronos">
+                <div>
+                    <br>
+                    <p class="parrafo" id="tronos">
+                        Juego de tronos es la historia de la lucha por un trono, el trono de hierro, forjado con las espadas de los enemigos vencidos. Siete son los reinos de Poniente y muchas las casas que se disputarán la corona: los herederos, los exiliados, los despojados y los actuales regentes.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio11()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/coraline.jpg" alt="Coraline">
+                <div>
+                    <br>
+                    <p class="parrafo" id="coraline">
+                        Al día siguiente de mudarse de casa, Coraline explora las catorce puertas de su nuevo hogar. Trece se pueden abrir con normalidad, pero la decimocuarta está cerrada y tapiada. Cuando por fin consigue abrirla, Coraline se encuentra con un pasadizo secreto que la conduce a otra casa tan parecida a la suya que resulta escalofriante.
+
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio12()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/la puerta del bosque.jpg" alt="la puerta del bosque">
+                <div>
+                    <p class="parrafo" id="bosque">
+                        La historia contará las aventuras que vivirá la chica para encontrar respuestas a su destino y a la desaparición de su madre. La novela se centra mucho en los pequeños cuentos que la abuela de Alice escribe y que la chica necesita descifrar para poder llegar hasta la casa de su abuela en el bosque de Avellanos.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio13()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/American Gods.jpg" alt="American Gods">
+               
+                <div>
+                    <br>
+                    <p class="parrafo" id="american">
+                        La vida en la cárcel es dura. Pero siempre queda un rayo de esperanza si sabes que, a la salida, te espera una mujer que te ama, un amigo que te quiere, un trabajo que adoras,... Todo eso es lo que quiere Sombra, que está a punto de salir de la cárcel... Pero un día le comunican que su mujer y su mejor amigo han muerto en un accidente de coche.
+                        
+                        Entonces, contratado por un extraño anciano experto en timos y estafas que responde al nombre de Wednesday, Sombra empieza un interminable viaje a lo largo y ancho de América, perseguido por el espíritu de su esposa, en el que descubre el límite entre lo humano y lo divino, y que las reglas que rigen el mundo de los hombres no son las mismas con las que los dioses conducen el mundo.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio14()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/la espada del destino.jpg" alt="la espada del destino">
+                <div>
+                    <p class="parrafo" id="espada">
+                        Conflictos de supervivencia, codicia y amor, en una tierra poblada por magos, príncipes, estarostas, voievodas, druidas, vexlings, dríadas, juglares y criaturas de todo pelaje. La vida de un brujo cazador de monstruos no es fácil. Tan pronto puede uno tener que meterse hasta el cuello en un estercolero para eliminar a la bestia carroñera que amenaza la ciudad, intentado no atrapar una infección incurable, como se puede encontrar unido a la cacería de uno de los últimos dragones, en la que la cuestión no es si los cazadores conseguirán matar a la pobre bestia, sino qué pasará cuando tengan que repartirse el botín.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio15()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/La historia interminable.jpg" alt="La historia interminable">
+                <div>
+                    <p class="parrafo" id="interminable">
+                        La Emperatriz Infantil está mortalmente enferma y su reino, Fantasia, corre un grave peligro. La salvación depende de Atreyu, un valiente guerrero de la tribu de los pieles verdes, y Bastian, un niño tímido que lee con pasión un libro mágico. Solo un ser humano puede salvar este lugar encantado. Juntos emprenderán un fascinante viaje a través de tierras de dragones, gigantes, monstruos y magia que no tiene vuelta atrás. A medida que se adentra en Fantasia, Bastian deberá resolver también los misterios de su propio corazón.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio16()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+        </div>
+  
+        <h2 class="titulo-genero" id="suspense">Misterio y suspense</h2>
+        <div class="libro2">
+
+            <div class="portada">
+                <img src="imagenes/El silencio de los corderos.jpg" alt="">
+                <div>
+                    <p class="parrafo" id="corderos">
+                        la brillante pero perturbada agente del FBI, Clarice Starling, es asignada para entrevistar a Hannibal Lecter, un famoso psiquiatra y asesino en serie encarcelado, con la esperanza de obtener información sobre otro asesino en serie conocido como "Buffalo Bill". Starling debe enfrentarse a la astucia manipuladora de Lecter mientras persigue pistas que la llevan a enfrentarse cara a cara con Buffalo Bill. A lo largo de la narrativa, se desarrolla una tensión psicológica fascinante mientras Starling y Lecter entablan una relación de gato y ratón, y Starling se enfrenta a sus propios demonios personales. 
+                    </p>
+                </div>
+                <button  class="boton-lectura" onclick="lecturaAudio17()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El misterio de la cripta embrujada.jpg" alt="">
+                <div>
+                    <p class="parrafo" id="cripta">
+                        La historia sigue al detective anónimo, que narra las hilarantes desventuras que enfrenta mientras investiga un caso aparentemente simple que se complica rápidamente. Cuando es contratado para encontrar a un hombre desaparecido, el detective se ve inmerso en una trama enredada llena de personajes excéntricos y situaciones absurdas. A medida que avanza en su investigación, se enfrenta a obstáculos cada vez más extraños y peligrosos, desde una cripta embrujada hasta un culto secreto. 
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio18()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El laberinto de los espíritus.jpg" alt="El laberinto de los espíritus">
+                <div>
+                    <p class="parrafo" id="laberinto">
+                        La historia sigue a Alicia Gris, una investigadora privada que, en la sombría Barcelona de posguerra, es contratada para encontrar a Mauricio Valls, un ministro desaparecido del régimen franquista. A medida que Alicia se adentra en la investigación, descubre oscuros secretos familiares y conexiones con el Cementerio de los Libros Olvidados. En su búsqueda, se enfrenta a conspiraciones, traiciones y misterios que la llevan a recorrer un laberinto de intrigas y pasiones entrelazadas. 
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio19()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Perdida.jpg" alt="Perdida">
+               
+                <div>
+                    <p class="parrafo" id="perdida">
+                        Nick y Amy Dunne, una pareja aparentemente perfecta cuyo matrimonio se ve sacudido por la desaparición de Amy en su quinto aniversario de bodas. A medida que la policía investiga su desaparición, las sospechas recaen cada vez más en Nick, quien se convierte en el principal sospechoso. La narrativa alterna entre el punto de vista de Nick y los diarios de Amy, revelando secretos oscuros y giros sorprendentes en la trama.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio20()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El Nombre de la Rosa.jpg" alt="El Nombre de la Rosa">
+                <div>
+                    <p class="parrafo" id="rosa">
+                       El monje franciscano William de Baskerville y su joven ayudante, Adso de Melk, mientras investigan una serie de misteriosos asesinatos en una abadía benedictina en el norte de Italia. A medida que profundizan en la investigación, enfrentan la oposición de la Inquisición, disputas teológicas y secretos oscuros que la abadía trata de ocultar. La novela combina intriga detectivesca con debates teológicos y filosóficos, explorando temas como el conocimiento, el poder y la corrupción.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio21()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/La isla de las últimas voces.jpg" alt="La isla de las últimas voces">
+                <div>
+                    <p class="parrafo" id="isla">
+                        Ana y su hijo, Borja, quienes viajan a una remota isla en la costa de Gales para visitar a su hermana, Helena. Pronto, se ven atrapados en una isla misteriosa y aislada debido a una tormenta que destruye los medios de comunicación y transporte. A medida que exploran la isla en busca de ayuda, descubren que está habitada por una comunidad con secretos oscuros y peligrosos. Ana y Borja se ven obligados a enfrentarse a sus propios temores y traumas mientras luchan por sobrevivir y escapar de la isla.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio22()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+        </div>
+            
+        <h2 class="titulo-genero" id="infantil">Literatura infantil</h2>
+        <div class="libro2">
+
+            <div class="portada">
+                <a href="audiolibros.html"><img src="imagenes/Harry Potter.jpg" alt="Harry Potter"></a>
+                <div>
+                    <br>
+                    <p class="parrafo" id="potter">
+                        Harry Potter, un niño huérfano criado por sus crueles tíos, descubre en su undécimo cumpleaños que es un mago y que ha sido aceptado en la Escuela de Magia y Hechicería de Hogwarts. Allí, hace amigos como Ron Weasley y Hermione Granger, y descubre su conexión con el mundo mágico. Durante su primer año en Hogwarts, Harry investiga la misteriosa desaparición de la Piedra Filosofal, un objeto que otorga la inmortalidad, y enfrenta al oscuro mago Lord Voldemort, quien busca recuperarla para recuperar su forma física. A través de una serie de aventuras, Harry aprende sobre el poder de la amistad y el valor mientras se prepara para enfrentarse a su destino como "El Niño que Sobrevivió".
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio23()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El Principito.jpg" alt="El Principito">
+                <div>
+                    <p class="parrafo" id="principito">
+                     
+                     "El Principito", escrito por Antoine de Saint-Exupéry, es un cuento filosófico sobre un piloto de avión que se estrella en el desierto del Sahara y se encuentra con un pequeño príncipe que viene de otro planeta. A medida que el piloto repara su avión, el pequeño príncipe le cuenta sobre su viaje por diferentes planetas y las personas peculiares que ha conocido, incluido un rey, un vanidoso, un bebedor y otros. A través de sus encuentros, el pequeño príncipe aprende sobre la naturaleza humana y la importancia de las relaciones y la amistad
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio24()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Matilda.jpg" alt="Matilda">
+                <div>
+                    <p class="parrafo" id="matilda">
+                        una niña extraordinariamente inteligente y valiente llamada Matilda Wormwood. Criada por padres negligentes y una directora de escuela cruel, Matilda descubre su amor por los libros y sus habilidades telequinéticas. Con la ayuda de su maestra, la amable Miss Honey, Matilda desafía las expectativas y enfrenta a los adultos injustos en su vida.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio25()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Charlie y la fábrica de chocolate.jpg" alt="Charlie y la fábrica de chocolate">
+               
+                <div>
+                    <p class="parrafo" id="fabrica"> 
+                        Charlie Bucket, un niño pobre que vive cerca de la misteriosa fábrica de chocolate de Willy Wonka. Cuando Wonka anuncia un concurso para permitir que cinco niños visiten su fábrica, Charlie encuentra un boleto dorado en una barra de chocolate y se une a los otros ganadores en un recorrido por la fábrica. A lo largo de la visita, los niños van desapareciendo uno por uno debido a su comportamiento egoísta o travieso, mientras Charlie demuestra ser un niño humilde y bondadoso.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio26()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El Grúfalo.jpg" alt="El Grúfalo">
+                <div>
+                    <p class="parrafo" id="grufalo">
+                        "El Grúfalo" es un libro infantil escrito por Julia Donaldson e ilustrado por Axel Scheffler. La historia sigue a un astuto ratón que inventa la existencia de un monstruo temible, el Grúfalo, para evitar ser comido por otros animales del bosque. Sin embargo, el ratón se sorprende cuando el Grúfalo resulta ser real y lo encuentra.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio27()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Las Crónicas de Narnia.jpg" alt="Las Crónicas de Narnia">
+                <div>
+                    <p class="parrafo" id="narnia">
+                        cuatro hermanos, Peter, Susan, Edmund y Lucy, son evacuados de Londres durante la Segunda Guerra Mundial y se refugian en la casa de un misterioso profesor. Mientras juegan en el desván, descubren un armario mágico que los transporta al mundo encantado de Narnia, donde se encuentran con criaturas fantásticas y una eterna batalla entre el bien y el mal. Los niños se unen al león Aslan para liberar Narnia de la tiranía de la malvada Bruja Blanca y restaurar la paz en el reino. 
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio28()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-genero" id="class">Literatura clásica</h2>
+        
+        <div class="libro2">
+
+            <div class="portada">
+                <img src="imagenes/El retrato de Dorian Gray.jpg" alt="El retrato de Dorian Gray">
+                <div>
+                    <br>
+                    <p class="parrafo" id="retrato">
+                        Dorian Gray es un hombre que busca la inmortalidad y para encontrarla, para no envejecer jamás y no perder esa belleza de la que tanto alardea tiene que matar. En una reflexión bastante profunda acerca del bien y del mal Oscar Wilde nos enseña lo que puede ocurrir si llegamos a aspirar a ser Dios.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio29()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Mujercitas.jpg" alt="Mujercitas">
+                <div>
+                    <p class="parrafo" id="mujercitas">
+                     
+                        Amy, Jo, Beth y Meg son cuatro hermanas que atraviesan Massachussets con su madre durante la Guerra Civil, unas vacaciones que realizan sin su padre evangelista itinerante. Durante estas vacaciones las adolescentes descubren el amor y la importancia de los lazos familiares.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio30()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/El gran Gatsby.jpg" alt="El gran Gatsby">
+                <div>
+                    <p class="parrafo" id="Gatsby">
+                        Jay Gatsby, un hombre atractivo y misterioso, ha vuelto de los campos de batalla en Europa e intenta reconquistar a Daisy, al principio con amagos de opulencia. La joven está casada con Tom Buchanan, fiel creyente en los valores del establishment, incluida la supremacía de la raza blanca y la respetabilidad familiar, lo que no le impide tener amoríos clandestinos.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio31()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Anna Karenina.jpg" alt="Anna Karenina">
+               
+                <div>
+                    <p class="parrafo" id="anna"> 
+                        Su argumento se centra en la vida de Ana Karenina, una mujer casada con un alto funcionario que se enamora de un joven militar y decide dejarlo todo por él, desafiando así las férreas convenciones sociales de la época. 
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio32()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Don Quijote de la Mancha.jpg" alt="Don Quijote de la Mancha">
+                <div>
+                    <p class="parrafo" id="don">
+                        El ingenioso hidalgo don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante, nombrándose a sí mismo como don Quijote de la Mancha.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio33()">leer <img  class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+
+            <div class="portada">
+                <img src="imagenes/Moby Dick.jpg" alt="Moby Dick">
+                <div>
+                    <p class="parrafo" id="dick">
+                        El capitán Ahab, apoyado sobre su pierna fabricada con una mandíbula de cachalote, empuja a su tripulación del Pequod al desastre en su obsesión por acabar con la ballena blanca, con Moby Dick; esa reencarnación del mal que mutiló su cuerpo y su alma para siempre.
+                    </p>
+                    <button  class="boton-lectura" onclick="lecturaAudio34()">leer <img class="audifonos" src="imagenes/medium-volume_11452254.png" alt="audio"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+

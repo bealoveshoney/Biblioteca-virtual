@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca UI</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <script src="javascript.js"></script>
+
+    <header>
+
+        <div class="logo"><img src="imagenes/Universo.gif" alt="Universo"></div>
+
+
+        <ul class="opciones-menu">
+
+            <li><a href="index.html">Inicio</a></li>
+            <li class="ul-first"><a href="generos.html">Géneros</a>
+                <ul class="ul-second">
+                    <div>
+                        <li><a href="generos.html#ficción">Ficción</a></li>
+                        <li><a href="generos.html#romantica">Novela romántica</a></li>
+                        <li><a href="generos.html#suspense">Misterio y suspense</a></li>
+                    </div>
+                    <div>
+                        <li><a href="generos.html#fantasy">Fantasía</a></li>
+                        <li><a href="generos.html#infantil">Literatura infantil</a></li>
+                        <li><a href="generos.html#class">Literatura clásica</a></li>
+                       
+                    </div>
+                </ul>
+            </li>
+            <li><a href="audiolibros.html">Audiolibros</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+
+        </ul>
+
+
+        <div class="botones">
+            <button>Registrarse</button>
+            <button>Iniciar sesión</button>
+
+        </div>
+
+
+    </header>
+
+    <section>
+
+        <div class="informacion">
+            <h2>Acerca de la Biblioteca</h2>
+            <p id="parrafo">Bienvenido a nuestra Biblioteca Virtual, un espacio digital diseñado para satisfacer todas tus
+                necesidades literarias desde la comodidad de tu hogar o cualquier lugar con acceso
+                a internet. Nuestra biblioteca virtual es mucho más que una simple colección de libros en línea; es un
+                universo de conocimiento al alcance de un click.</p>
+                <br>
+                <button style="width: 200px;"  onclick="aumentarTexto()">Aumentar/dismin texto<img style="width: 50px;" src="imagenes/aumento.png" alt="aumento de texto"></button>
+                <button style="width: 210px;" onclick="lecturaAudio()">Reproducir Audio <img style="width: 50px;" src="imagenes/medium-volume_11452254.png" alt="icono"></button> 
+        </div>
+        <div class="coleccion">
+            <h2 style="color: white; font-size:35px;">Colecciones por tematica</h2>
+            <div class="caja"><a href="colecciones.html#gods"><img src="imagenes/5.png" alt="dioses"></a></div>
+            <div class="caja"><a href="colecciones.html#art"><img src="imagenes/2.png" alt="arte"></a></div>
+            <div class="caja"><a href="colecciones.html#tragic"><img src="imagenes/8.png" alt="tragedia"></a></div>
+            <div class="caja"><a href="colecciones.html#love"><img src="imagenes/1.png" alt="romance"></a></div>
+            <div class="caja"><a href="colecciones.html#adventure"><img src="imagenes/3.png" alt="aventura"></a></div>
+            <div class="caja"><a href="colecciones.html#distopic"><img src="imagenes/6.png" alt="distopia"></a></div>
+            <div class="caja"><a href="colecciones.html#time"><img src="imagenes/7.png" alt="viajes-tiempo"></a></div>
+            <div class="caja"><a href="colecciones.html#storys"><img src="imagenes/4.png" alt="Cuentos fantasticos"></a></div>
+
+        </div>
+        </div>
+
+
+        <h2 style="color: white;">Top 10 libros más pedidos</h2>
+        <div class="destacados">
+           
+            <div class="libro">
+                <a href="https://flightsofadreamer.blogspot.com/2018/11/resena-el-lenguaje-de-las-espinas-leigh-bardugo.html"><img src="imagenes/el lenguaje de las espinas.jpg" alt="Libro 1" ></a>
+                <div class="detalles">
+                    <h2 style="font-size: 20px;">El lenguaje de las espinas</h2>
+                    <p class="genero">Literatura fantástica, Ciencia ficción</p>
+                </div>
+            </div>
+            <div class="libro">
+                <a href="https://conbdelibro.blogspot.com/2019/03/resena-de-rich-people-problems-de-kevin.html"><img src="imagenes/rich people.jpg" alt="Libro 2"></a>
+                <div class="detalles">
+                    <h2>Rich people problems</h2>
+                    <p class="genero">comedia romántica, satírica</p>
+                </div>
+            </div>
+            <div class="libro">
+                <a href="https://librismiquis.com/resenas/resena-de-almendra-de-won-pyung-sohn/"><img src="imagenes/almendra.jpg" alt="Libro 3"></a>
+                <div class="detalles">
+                    <h2>Almendra</h2>
+                    <p class="genero">Novela juvenil, coming of age</p>
+                </div>
+
+            </div>
+            <div class="libro">
+                <a href="https://www.tematika.com/las-historias-mas-bellas-de-la-mitologia-griega-9788417127015.html"><img src="imagenes/libro mitologia.jpg" alt="Libro 4"></a>
+                <div class="detalles">
+                    <h2 style="font-size: 20px;">Las historias más bellas de la mitologia griega</h2>
+                    <p class="genero">Infantil y juvenil, Historia-Mitologia</p>
+                </div>
+            </div>
+            <div class="libro">
+                <a href="https://toverthinker.blogspot.com/2013/01/aprendiz-de-vampiro-el-tenebroso-cirque.html"><img src="imagenes/cirque du freak.jpg" alt="Libro 5"></a>
+                <div class="detalles">
+                    <h2>Cirque du Freak</h2>
+                    <p class="genero">Terror, Ciencia ficción, Sobrenatural</p>
+                </div>
+            </div>
+
+            <div class="libro">
+                <a href="https://generacionreader.blogspot.com/2012/04/resena-1984.html"><img style="width: 103%;" src="imagenes/1984.jpg" alt="Libro 6"></a>
+                <div class="detalles">
+                    <h2>1984</h2>
+                    <p class="genero">Ciencia ficción, ciencia ficción social, Ficción política</p>
+                </div>
+            </div>
+            <div class="libro">
+               <a href="https://elpalomitron.com/resena-el-castillo-ambulante/"> <img style="width: 108%;" src="imagenes/castillo ambulante.png" alt="Libro 7"></a> 
+                <div class="detalles">
+                    <h2>Howl's moving castle</h2>
+                    <p class="genero"> Novela, Literatura fantástica, Literatura infantil</p>
+                </div>
+            </div>
+            <div class="libro">
+                <a href="https://www.modusleyendi.com/2021/10/a-sir-phillip-con-amor-julia-quinn.html"><img src="imagenes/bridgerton 2.jpg" alt="bridgerton"></a>
+                <div class="detalles">
+                    <h2>Brigerton III</h2>
+                    <p class="genero">Novela rosa, Romance histórico, Ficción</p>
+                </div>
+            </div>
+            <div class="libro">
+                <img src="imagenes/dune.jpg" alt="Libro 9">
+                <div class="detalles">
+                    <h2>Dune</h2>
+                    <p class="genero">Novela, Ciencia ficción, Literatura fantástica,</p>
+                </div>
+            </div>
+            <div class="libro">
+                <img src="imagenes/juego de tronos.webp" alt="Libro 10">
+                <div class="detalles">
+                    <h2>Juego de Tronos</h2>
+                    <p class="genero">Literatura fantástica, Ficción política</p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        
+        <img src="imagenes/titulo.jpg" alt="titulo-corto">
+        
+        <div class="infofoot">
+            <a href="mailto:universo-imaginario@gmail.com">universo-imaginario@gmail.com</a>
+            <a href="#"> telefono: 1122299994</a>
+            <a href="#">Buenos Aires, CABA</a>
+            <a href="#">© Universo imaginario, derechos reservados</a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
